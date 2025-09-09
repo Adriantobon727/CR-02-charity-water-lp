@@ -1,19 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Charity Water Landing Page</title>
-<link href="https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;600;700&display=swap" rel="stylesheet" />
+<title>charity: water Landing Page</title>
+<!-- Inter is a high-quality web font. Proxima Nova/Avenir are kept as fallbacks in CSS. -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <!-- Navigation Bar -->
 <nav class="navbar">
 <div class="nav-container">
-<a href="#" class="logo">
-<img src="logo.png" alt="Charity Water Logo" />
+<a href="#" class="logo" aria-label="charity: water home">
+<img src="img/cw_logo.png" alt="charity: water logo" />
 </a>
 <ul class="nav-links">
 <li><a href="#impact">Impact</a></li>
@@ -23,10 +23,9 @@
 </div>
 </nav>
 
-
 <!-- Hero Section -->
-<section class="hero">
-<div class="overlay"></div>
+<section class="hero" aria-label="Hero">
+<div class="overlay" aria-hidden="true"></div>
 <div class="hero-content">
 <h1>Clean Water, 100% Impact</h1>
 <p>With just one click, 100% of what you give brings clean water to communities in need. Track your impact from your phone.</p>
@@ -34,6 +33,25 @@
 </div>
 </section>
 
+<!-- Impact Section -->
+<section class="impact" id="impact">
+<h2>See your impact</h2>
+<p class="lede">Every donation funds sustainable, community-owned water projects. Here is how contributions turn into outcomes.</p>
+<div class="impact-grid">
+<div class="impact-card">
+<h3>Wells Drilled</h3>
+<p>Reliable access to clean water for villages.</p>
+</div>
+<div class="impact-card">
+<h3>Filtration Systems</h3>
+<p>Safe water at schools and health clinics.</p>
+</div>
+<div class="impact-card">
+<h3>Local Training</h3>
+<p>Community members trained to maintain systems.</p>
+</div>
+</div>
+</section>
 
 <!-- About Section -->
 <section class="about" id="about">
@@ -41,6 +59,13 @@
 <p>
 Every donation to charity: water helps fund sustainable clean water projects in communities around the world. Your contribution builds wells, installs filtration systems, and ensures that families no longer have to walk miles for unsafe water. Clean water means improved health, education, and brighter futures for generations to come.
 </p>
+</section>
+
+<!-- Donate Section -->
+<section class="donate" id="donate">
+<h2>Ready to help?</h2>
+<p>100% of your donation funds clean water projects. Start a monthly pledge or make a one‑time gift.</p>
+<a class="cta-btn" href="#">Donate now</a>
 </section>
 </body>
 </html>
